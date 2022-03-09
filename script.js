@@ -1,7 +1,7 @@
 "use strict";
 var input = document.getElementById('input')
 var output = document.getElementById('output')
-var words = ['war',"toy","play","doom","malware","fight","go","away",'elect','election',"people","computer","apple","pair","settings","script","president","divided","united",'issue','changes','block','allow']
+var words = ['war',"toy","play","doom","malware","fight","go","away",'elect','election',"people","computer","apple","pair","settings","script","president","divided","united",'issue','changes','block','allow',"hopefully","unfortunately","kill","live","born","replace","port","post","TV"]
 var wordsToReplace = {}
 
 //as there is no function to pick random items from an array, this is used
@@ -21,7 +21,7 @@ words.forEach(function(word){
 window.wordsToReplace[word] = random_choice(words)
 })
 
-input.onkeydown = function(){
+input.onkeypress = function(){
 var input_words = input.value.split(' ')
 var output_words = []
 input_words.forEach(function(word){
