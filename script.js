@@ -6,7 +6,7 @@ var wordsToReplace = {}
 
 //as there is no function to pick random items from an array, this is used
 var random_choice = function(input_array){
-  if(typeof array !== 'object'){return array}
+  if(typeof input_array !== 'object'){return array}
   var array = (input_array||[input_array])
 var index = Math.round(Math.random()*(array.length-1))
 var item = array[index]
